@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pontuação Policial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Pontuação Policial</h1>
+        <div>
+            <label for="nomePolicial">Nome do Policial:</label>
+            <input type="text" id="nomePolicial">
+        </div>
+        <div>
+            <label for="metrica">Escolha uma métrica:</label>
+            <select id="metrica">
+                <option value="apreensao_arma">Apreensão de Arma</option>
+                <option value="cumprimento_mandado">Cumprimento de Mandado</option>
+                <!-- Adicione outras métricas aqui -->
+            </select>
+        </div>
+        <button onclick="atualizarPontuacao()">Registrar Pontuação</button>
+        <div id="pontuacaoDiaria"></div>
+        <div>
+        <button id="exportarExcel">Exportar para o Excel</button>
+         </div>
+
+        <!-- Tabela para acompanhar a soma de pontos dos policiais -->
+        <h2>Pontuação Total dos Policiais</h2>
+        <table id="tabelaPontuacao">
+            <thead>
+                <tr>
+                    <th>Nome do Policial</th>
+                    <th>Pontuação Total</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+                <!-- Aqui será preenchido dinamicamente com os dados dos policiais -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
