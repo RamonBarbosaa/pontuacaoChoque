@@ -27,8 +27,19 @@ function atualizarPontuacao() {
     const metricaSelecionada = document.getElementById('metrica').value;
 
     const metricas = {
-        "apreensao_arma": 3,
+        "conducaoDele": 2,
+        "apreencaoArma": 3,
+        "apreencaoDate05": 2,
+        "apreencaoD05ate1": 3,
+        "apreencaoDmais1": 4,
         "cumprimento_mandado": 2,
+        "recuperacaoV": 3,
+        "apoioOperacoes": 2,
+        "grandesEventos": 1,
+        "estabelecimentoPrisional": 2,
+        "reintegracao": 2,
+        "escoltaPreso": 1,
+
         // Adicione outras métricas aqui
     };
 
